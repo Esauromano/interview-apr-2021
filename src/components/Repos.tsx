@@ -3,11 +3,11 @@ import React from "react";
 const Repos = (props: {isLoaded:boolean, items: any[]}) => {
 
   if (props.isLoaded) {
-    return <ul  className="Columna">
+    return <ul>
       {
         props.items?.map((item: any) => (
           <li key={item.url}>
-            {item.html_url}
+            <a href={item.html_url}>{item.name}</a>
           </li>
         ))
       }

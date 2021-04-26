@@ -1,7 +1,7 @@
 import React from "react";
 
-const Conditionaldiv = (props: {isLoaded:boolean, username:string, setUsername: Function}) => {
-  if (!props.isLoaded) {
+const Conditionaldiv = (props: {isLoaded:boolean, username:string, setUsername: Function, hasError:boolean}) => {
+  if (!props.isLoaded && !props.hasError) {
     return <div className="conditionalDiv">
       <p>
         Enter a GitHub username and push the button to load it's data
