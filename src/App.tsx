@@ -26,6 +26,7 @@ function App() {
         <Conditionaldiv isLoaded={ isLoaded } username={ username } setUsername={ setUsername } hasError={hasError}/>
         <MyButton
           username={username}
+          setUsername={setUsername}
           setItems={setItems}
           setHasError={setHasError}
           setUserImage={setUserImage}

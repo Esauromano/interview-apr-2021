@@ -10,7 +10,8 @@ const MyButton = ( props:
     setHasError: Function,
     setUserImage: Function,
     setError: Function,
-    hasError:boolean
+    hasError: boolean,
+    setUsername: Function
   }
 ) => {
   
@@ -24,7 +25,7 @@ const MyButton = ( props:
       props.username
     )}>Load data</button>;
   } else {
-    return <button onClick={e => { props.setIsLoaded(false); props.setHasError(false);}}>Reset</button>;
+    return <button onClick={e => { props.setIsLoaded(false); props.setHasError(false); props.setUsername("")}}>Reset</button>;
   }
 };
 
